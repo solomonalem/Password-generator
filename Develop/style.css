@@ -1,3 +1,8 @@
+:root {
+  --primary-bg: #043a80;
+  --secondary-bg: #130997;
+}
+
 *,
 *::before,
 *::after {
@@ -14,8 +19,9 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #e8e7f7;
 }
+
 
 .wrapper {
   padding-top: 30px;
@@ -25,9 +31,9 @@ body {
 
 header {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: var(--secondary-bg);
 }
 
 .card {
@@ -35,19 +41,20 @@ header {
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(0, 0%, 100%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
   font-size: 0.9rem;
+  border: 5px solid rgb(38, 3, 134);
 }
 .card-requirement {
-  background-color: hsl(0, 0%, 97%);
+  background: linear-gradient(90deg, var(--secondary-bg), var(--primary-bg));
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -55,16 +62,16 @@ header {
   font-size: 0.97rem;
 }
 .card-requirement h4 {
-  color: #0b9164;
+  color: #b6fae3;
   margin: 0.8rem 0;
   font-weight: 100;
 }
 .card-requirement label {
-  color: rgb(133, 133, 133);
-  margin-left: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin-left: 3.5rem;
 }
 #length {
-  margin: 0.3rem -0.4rem;
+  margin: 0rem -1.6rem;
   padding: 0 -0.2rem;
   font-size: 0.8rem;
 }
@@ -107,7 +114,7 @@ header {
     0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
