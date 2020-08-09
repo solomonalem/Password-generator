@@ -1,53 +1,33 @@
-# Password Generator Starter Code
+# Password-Generator
 
-<!-- # 03 JavaScript: Password Generator
+## Purpose
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+An app to generate password
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+## Description
 
-## User Story
+application that an employee can use to generate a random password based on criteria they’ve selected(Lowercase,Uppercase,Numbers and Special characters) and it helps users create stronger passwords that provide greater security for a given type of access.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Built With
 
-## Acceptance Criteria
+- HTML
+- CSS
+- JAVASCRIPT
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
+## Website
 
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
+https://solomonmeresa.github.io/Password-generator/
 
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
+## Visuals
 
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
+Fully - responsive
 
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
+<img src="./Develop/img/Screenshot-1.png" alt="full-screen app"/>
+<img src="./Develop/img/Screenshot-2.png" alt="medium-screen app"/>
+<img src="./Develop/img/Screenshot-3.png" alt="small-screen app"/>
 
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
+## Contribution
 
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+Made by solomon
 
-The following image demonstrates the application functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project. -->
+### ©️2020 Password-generator
