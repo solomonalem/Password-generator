@@ -57,13 +57,16 @@ header {
 .card-requirement h4 {
   color: #0b9164;
   margin: 0.8rem 0;
+  font-weight: 100;
 }
 .card-requirement label {
   color: rgb(133, 133, 133);
-  margin-left: 0.9rem;
+  margin-left: 1.5rem;
 }
 #length {
-  margin: 0;
+  margin: 0.3rem -0.4rem;
+  padding: 0 -0.2rem;
+  font-size: 0.8rem;
 }
 
 .card-header::after {

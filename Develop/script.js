@@ -98,38 +98,56 @@ function generateRandomNumber(min = 0, max) {
 }
 
 function generate() {
-  if (lower.checked || upper.checked || number.checked) {
-    var password = generatePassword();
-    passwordText.value = password;
+  if (
+    lower.checked ||
+    upper.checked ||
+    number.checked ||
+    !length.value === ""
+  ) {
+    // check first if the user selectd length between 8 -128
+    if (length.value < 8 || length.value > 128) {
+      alert("please select valid Password LENGTH");
+    } else {
+      password = generatePassword(2, 15);
+      // Display the result to the UI
+      passwordText.value = password;
 
-    //Clear the checked requirments for new password
-    document.getElementById("lower").checked = false;
-    document.getElementById("upper").checked = false;
-    document.getElementById("number").checked = false;
+      //Clear the checked requirments for new password
+      lowercase.checked = false;
+      uppercase.checked = false;
+      number.checked = false;
+      length.value = "";
+    }
   } else {
     //clear password area for new password
+
     passwordText.value = "";
-    window.alert("Please select at least one requirement ");
+    password = "";
+    window.alert(
+      "Please select at least one requirement and specify password length"
+    );
   }
 }
 
 // Assignment code here
-function generatePassword() {
-  for (var i = 0; i < 20; i++) {
-    password = password + upperCaseAlp[generateRandomNumber(2, 9)];
+function generatePassword(minChar, maxChar) {
+  for (var i = minChar; i < maxChar; i++) {
+    password = password + upperCaseAlp[generateRandomNumber(0, 9)];
   }
   return password;
 }
+
+// to lower case
 
 function changeCase() {
   password.toLowerCase();
 }
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.getElementById("generate");
 
 // Get references to the #password element
-var passwordText = document.querySelector("#password");
+var passwordText = document.getElementById("password");
 
 // Get references to the #password element
 var cardRequirement = document.getElementById("card-requirement");
@@ -138,6 +156,7 @@ var lengthOfPassword = document.querySelector('input[value="character"]');
 var lowercase = document.querySelector("#lower");
 var uppercase = document.querySelector("#upper");
 var number = document.querySelector("#number");
+var length = document.querySelector("#length");
 
 generateBtn.addEventListener("click", generate);
 
